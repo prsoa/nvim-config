@@ -1,0 +1,32 @@
+" auto-install vim-plug
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  "autocmd VimEnter * PlugInstall
+  "autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+
+call plug#begin('~/.config/nvim/autoload/plugged')
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+" or                                , { 'branch': '0.1.x' }
+
+Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Themes
+Plug 'martinsione/darkplus.nvim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'dikiaap/minimalist'
+Plug 'EdenEast/nightfox.nvim', { 'tag': 'v1.0.0' } " Vim-Plug
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+
+Plug 'glepnir/dashboard-nvim'
+
+Plug 'tpope/vim-surround'
+
+call plug#end()
+
