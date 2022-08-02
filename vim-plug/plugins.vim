@@ -26,7 +26,17 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 Plug 'glepnir/dashboard-nvim'
 
+" Surround text ()
 Plug 'tpope/vim-surround'
+
+" Git status on file lines
+Plug 'vim-scripts/vim-gitgutter'
+
+" Toggle comments
+Plug 'terrortylor/nvim-comment'
+
+" Buffline
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 call plug#end()
 

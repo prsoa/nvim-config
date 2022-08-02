@@ -45,9 +45,24 @@ require("nvim-tree").setup({
 -- Telescope ignore node_modules
 require('telescope').setup{ defaults = { file_ignore_patterns = {"node_modules"} } }
 
+require('nvim_comment').setup()
+
+require("bufferline").setup{
+  options = {
+    mode = "buffers",
+    offsets = {{filetype = "NvimTree", text_align = "left"}},
+  }
+}
+
 -- Theme
 vim.cmd([[set t_Co=256]])
 vim.cmd([[syntax on]])
 vim.cmd([[colorscheme onehalfdark]])
 
 vim.cmd([[highlight NvimTreeOpenedFile gui=bold,underline]])
+
+-- Git Gutter to the side of line numbers
+vim.cmd([[set signcolumn=yes]])
+
+-- Copy to System clipboard - requirex "xsel" installed for linux
+vim.cmd([[set clipboard+=unnamedplus]])
