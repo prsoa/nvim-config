@@ -54,10 +54,15 @@ require("bufferline").setup{
   }
 }
 
--- Theme
+-- Theme vim-code-dark
 vim.cmd([[set t_Co=256]])
-vim.cmd([[syntax on]])
-vim.cmd([[colorscheme onehalfdark]])
+vim.cmd([[set t_ut=]])
+vim.cmd([[colorscheme codedark]])
+
+-- Theme onehalfdark
+-- vim.cmd([[set t_Co=256]])
+-- vim.cmd([[syntax on]])
+-- vim.cmd([[colorscheme onehalfdark]])
 
 vim.cmd([[highlight NvimTreeOpenedFile gui=bold,underline]])
 
@@ -66,3 +71,5 @@ vim.cmd([[set signcolumn=yes]])
 
 -- Copy to System clipboard - requirex "xsel" installed for linux
 vim.cmd([[set clipboard+=unnamedplus]])
+
+vim.cmd([[let g:airline_powerline_fonts = 1]])
