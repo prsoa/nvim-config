@@ -56,12 +56,13 @@ require("bufferline").setup{
 
 -- Theme vim-code-dark
 vim.cmd([[set t_Co=256]])
-vim.cmd([[set t_ut=]])
+-- vim.cmd([[set t_ut=]])
+vim.cmd([[colorscheme onehalfdark]])
 vim.cmd([[colorscheme codedark]])
 
 -- Theme onehalfdark
 -- vim.cmd([[set t_Co=256]])
--- vim.cmd([[syntax on]])
+vim.cmd([[syntax on]])
 -- vim.cmd([[colorscheme onehalfdark]])
 
 vim.cmd([[highlight NvimTreeOpenedFile gui=bold,underline]])

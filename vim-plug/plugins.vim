@@ -23,6 +23,7 @@ Plug 'dikiaap/minimalist'
 Plug 'EdenEast/nightfox.nvim', { 'tag': 'v1.0.0' } " Vim-Plug
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'sainnhe/sonokai'
+Plug 'gosukiwi/vim-atom-dark'
 
 Plug 'glepnir/dashboard-nvim'
 
