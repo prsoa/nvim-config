@@ -18,3 +18,8 @@ keymap("n", "<S-t>", "<cmd>NvimTreeToggle<cr>", opts)
 keymap("n", "<Leader>n", "<cmd>:BufferLineCycleNext<cr>", opts)
 keymap("n", "<Leader>m", "<cmd>:BufferLineCyclePrev<cr>", opts)
 keymap("n", "<Leader>x", "<cmd>:bd | :bp<cr>", opts)
+
+keymap("n", "<Leader>o", ":<C-u>call append(line(\".\"), repeat([\"\"], v:count1))<cr>", opts)
+keymap("n", "<Leader>O", ":<C-u>call append(line(\".\")-1, repeat([\"\"], v:count1))<cr>", opts)
+
+keymap("n", "<Leader>t", "<cmd>:ToggleTerm size=60 direction=vertical<cr>", opts)
