@@ -31,7 +31,7 @@ Plug 'glepnir/dashboard-nvim'
 Plug 'tpope/vim-surround'
 
 " Git status on file lines
-Plug 'vim-scripts/vim-gitgutter'
+Plug 'airblade/vim-gitgutter' 
 
 " Toggle comments
 Plug 'terrortylor/nvim-comment'
@@ -42,9 +42,6 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 " vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-" Terminal
-Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
 
 call plug#end()
 
