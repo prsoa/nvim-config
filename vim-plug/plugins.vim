@@ -30,8 +30,11 @@ Plug 'glepnir/dashboard-nvim'
 " Surround text ()
 Plug 'tpope/vim-surround'
 
-" Git status on file lines
+" Git 
 Plug 'airblade/vim-gitgutter' 
+Plug 'nvim-lua/plenary.nvim'
+Plug 'sindrets/diffview.nvim'
+Plug 'TimUntersberger/neogit'
 
 " Toggle comments
 Plug 'terrortylor/nvim-comment'
@@ -42,6 +45,13 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 " vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" git-conflict
+Plug 'akinsho/git-conflict.nvim'
+
+" DAP - Debugger
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
 
 call plug#end()
 

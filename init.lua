@@ -4,6 +4,7 @@ vim.cmd([[source $HOME/.config/nvim/vim/coc-config.vim]])
 require "user.options"
 require "user.dashboard"
 require "user.keymaps"
+require "user.dap"
 
 -- nvim-tree
 
@@ -29,7 +30,10 @@ require("nvim-tree").setup({
     add_trailing = true,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
+  },
+  git = {
+    ignore = false,
   },
   update_focused_file = {
     enable = true,
@@ -54,6 +58,8 @@ require("bufferline").setup{
   }
 }
 
+require('git-conflict').setup()
+
 -- Theme vim-code-dark
 vim.cmd([[set t_Co=256]])
 -- vim.cmd([[set t_ut=]])
@@ -74,3 +80,6 @@ vim.cmd([[set signcolumn=yes]])
 vim.cmd([[set clipboard+=unnamedplus]])
 
 vim.cmd([[let g:airline_powerline_fonts = 1]])
+
+-- Relative line numbers
+vim.cmd([[set relativenumber]])
