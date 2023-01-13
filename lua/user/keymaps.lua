@@ -29,6 +29,7 @@ keymap("n", "<Leader>di", "<cmd>lua require'dap'.step_into()<cr>", opts)
 keymap("n", "<Leader>dt", "<cmd>lua require'dap'.step_out()<cr>", opts)
 keymap("n", "<Leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
 keymap("n", "<Leader>dC", "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>", opts)
+keymap("n", "<Leader>dd", "<cmd>lua require'dap'.disconnect()<cr>", opts)
 
 -- Git
 keymap("n", "<Leader>gg", "<cmd>:Neogit<cr>", opts)
