@@ -7,7 +7,9 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "php",
+    "java"
   ],
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true

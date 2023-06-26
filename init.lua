@@ -15,17 +15,10 @@ require("nvim-tree").setup()
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
-    adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-        { key = "d", action = "dir_down" },
-      },
-    },
+    adaptive_size = true
   },
   renderer = {
     group_empty = true,
-    -- highlight_git = true,
     highlight_opened_files = "name",
     add_trailing = true,
   },
@@ -41,8 +34,6 @@ require("nvim-tree").setup({
     ignore_list = {},
   },
   reload_on_bufenter = true,
-  open_on_setup = true,
-  open_on_setup_file = true,
   open_on_tab = true,
 })
 

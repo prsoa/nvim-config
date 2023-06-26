@@ -40,7 +40,7 @@ Plug 'TimUntersberger/neogit'
 Plug 'terrortylor/nvim-comment'
 
 " Buffline
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
 " vim-airline
 Plug 'vim-airline/vim-airline'
