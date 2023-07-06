@@ -1,17 +1,13 @@
 vim.cmd([[source $HOME/.config/nvim/vim-plug/plugins.vim]])
-vim.cmd([[source $HOME/.config/nvim/vim/coc-config.vim]])
 
 require "user.options"
 require "user.dashboard"
 require "user.keymaps"
 require "user.dap"
+require "user.lspconfig"
 
 -- nvim-tree
-
--- empty setup using defaults
-require("nvim-tree").setup()
-
--- OR setup with some options
+-- setup with some options
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
@@ -49,7 +45,20 @@ require("bufferline").setup{
   }
 }
 
+-- Git conflict setup
 require('git-conflict').setup()
+
+-- LSP Installer Setup
+require("nvim-lsp-installer").setup({
+    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+    ui = {
+        icons = {
+            server_installed = "✓",
+            server_pending = "➜",
+            server_uninstalled = "✗"
+        }
+    }
+})
 
 -- Theme vim-code-dark
 vim.cmd([[set t_Co=256]])

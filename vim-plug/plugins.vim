@@ -11,10 +11,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
+" File Tree
 Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" LSP Config
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+
+" Completion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
 
 " Themes
 Plug 'martinsione/darkplus.nvim'
