@@ -5,6 +5,7 @@ require "user.dashboard"
 require "user.keymaps"
 require "user.dap"
 require "user.lspconfig"
+require "user.prettier"
 
 -- nvim-tree
 -- setup with some options
