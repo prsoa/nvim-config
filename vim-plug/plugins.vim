@@ -52,7 +52,7 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter' 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
-Plug 'TimUntersberger/neogit'
+Plug 'NeogitOrg/neogit'
 
 " Toggle comments
 Plug 'terrortylor/nvim-comment'

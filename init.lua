@@ -61,6 +61,8 @@ require("nvim-lsp-installer").setup({
     }
 })
 
+require('neogit').setup()
+
 -- Theme vim-code-dark
 vim.cmd([[set t_Co=256]])
 -- vim.cmd([[set t_ut=]])
