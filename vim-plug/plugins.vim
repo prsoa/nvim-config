@@ -9,7 +9,7 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 
 " File Tree
 Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
@@ -30,7 +30,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'MunifTanjim/prettier.nvim'
 
-Plug 'L3MON4D3/LuaSnip', {'tag': 'v1.2.1', 'do': 'make install_jsregexp'}
+Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'rafamadriz/friendly-snippets'
 
@@ -47,6 +47,9 @@ Plug 'glepnir/dashboard-nvim'
 
 " Surround text ()
 Plug 'tpope/vim-surround'
+
+" Auto pairs ()
+Plug 'windwp/nvim-autopairs'
 
 " Git 
 Plug 'airblade/vim-gitgutter' 
@@ -69,6 +72,7 @@ Plug 'akinsho/git-conflict.nvim'
 
 " DAP - Debugger
 Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-neotest/nvim-nio'
 Plug 'rcarriga/nvim-dap-ui'
 
 call plug#end()

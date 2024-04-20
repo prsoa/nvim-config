@@ -35,7 +35,12 @@ require("nvim-tree").setup({
 })
 
 -- Telescope ignore node_modules
-require('telescope').setup{ defaults = { file_ignore_patterns = {"node_modules"} } }
+require('telescope').setup{
+  defaults = { file_ignore_patterns = {"node_modules"} },
+  pickers = { 
+    find_files = { hidden = true }
+  }
+}
 
 require('nvim_comment').setup()
 
@@ -62,6 +67,9 @@ require("nvim-lsp-installer").setup({
 })
 
 require('neogit').setup()
+
+-- Auto Pairs ()
+require("nvim-autopairs").setup {}
 
 -- Theme vim-code-dark
 vim.cmd([[set t_Co=256]])
