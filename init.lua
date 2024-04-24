@@ -1,7 +1,6 @@
 vim.cmd([[source $HOME/.config/nvim/vim-plug/plugins.vim]])
 
 require "user.options"
-require "user.dashboard"
 require "user.keymaps"
 require "user.dap"
 require "user.lspconfig"
@@ -66,21 +65,34 @@ require("nvim-lsp-installer").setup({
     }
 })
 
+-- Treesitter Syntax Highlighting
+require('nvim-treesitter.configs').setup {
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "javascript", "typescript", "html", "css", "tsx" },
+  sync_install = false,
+  highlight = {
+    enable = true,
+    disable = function(lang, buf)
+        local max_filesize = 100 * 1024 -- 100 KB
+        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+        if ok and stats and stats.size > max_filesize then
+            return true
+        end
+    end,
+    additional_vim_regex_highlighting = true,
+  },
+}
+
 require('neogit').setup()
 
 -- Auto Pairs ()
 require("nvim-autopairs").setup {}
 
+-- oil.nvim
+require("oil").setup()
+
 -- Theme vim-code-dark
 vim.cmd([[set t_Co=256]])
--- vim.cmd([[set t_ut=]])
-vim.cmd([[colorscheme onehalfdark]])
 vim.cmd([[colorscheme codedark]])
-
--- Theme onehalfdark
--- vim.cmd([[set t_Co=256]])
-vim.cmd([[syntax on]])
--- vim.cmd([[colorscheme onehalfdark]])
 
 vim.cmd([[highlight NvimTreeOpenedFile gui=bold,underline]])
 
@@ -94,3 +106,6 @@ vim.cmd([[let g:airline_powerline_fonts = 1]])
 
 -- Relative line numbers
 vim.cmd([[set relativenumber]])
+
+-- Disable mouse
+vim.opt.mouse = ""

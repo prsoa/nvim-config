@@ -30,9 +30,15 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'MunifTanjim/prettier.nvim'
 
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'}
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'rafamadriz/friendly-snippets'
+
+" oil.nvim
+Plug 'stevearc/oil.nvim'
 
 " Themes
 Plug 'martinsione/darkplus.nvim'
@@ -42,8 +48,6 @@ Plug 'EdenEast/nightfox.nvim', { 'tag': 'v1.0.0' } " Vim-Plug
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'sainnhe/sonokai'
 Plug 'gosukiwi/vim-atom-dark'
-
-Plug 'glepnir/dashboard-nvim'
 
 " Surround text ()
 Plug 'tpope/vim-surround'

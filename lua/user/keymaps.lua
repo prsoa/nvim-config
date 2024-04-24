@@ -35,3 +35,6 @@ keymap("n", "<Leader>dd", "<cmd>lua require'dap'.disconnect()<cr>", opts)
 keymap("n", "<Leader>gg", "<cmd>:Neogit<cr>", opts)
 keymap("n", "<Leader>gv", "<cmd>:DiffviewOpen<cr>", opts)
 keymap("n", "<Leader>gl", "<cmd>:Neogit log<cr>", opts)
+
+-- oil.nvim
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
