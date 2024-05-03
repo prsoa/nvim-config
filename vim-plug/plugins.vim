@@ -16,8 +16,9 @@ Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
 " LSP Config
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
 
 " LSP Completion
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -29,6 +30,9 @@ Plug 'hrsh7th/nvim-cmp'
 " LSP Prettier
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'MunifTanjim/prettier.nvim'
+
+" jdtls
+Plug 'mfussenegger/nvim-jdtls'
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

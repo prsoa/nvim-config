@@ -43,6 +43,11 @@ require('telescope').setup{
 
 require('nvim_comment').setup()
 
+require("mason").setup()
+require("mason-lspconfig").setup {
+    ensure_installed = { "lua_ls", "jdtls", "tsserver" },
+}
+
 require("bufferline").setup{
   options = {
     mode = "buffers",
@@ -53,21 +58,9 @@ require("bufferline").setup{
 -- Git conflict setup
 require('git-conflict').setup()
 
--- LSP Installer Setup
-require("nvim-lsp-installer").setup({
-    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-    ui = {
-        icons = {
-            server_installed = "✓",
-            server_pending = "➜",
-            server_uninstalled = "✗"
-        }
-    }
-})
-
 -- Treesitter Syntax Highlighting
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "javascript", "typescript", "html", "css", "tsx" },
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "javascript", "typescript", "html", "css", "tsx", "java" },
   sync_install = false,
   highlight = {
     enable = true,
