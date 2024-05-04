@@ -2,7 +2,7 @@ require "user.cmp"
 
 -- LSP Setup
 local lspconfig = require('lspconfig')
-local servers = {'tsserver', 'jdtls' }
+local servers = {'tsserver' }
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 for _, server in ipairs(servers) do
