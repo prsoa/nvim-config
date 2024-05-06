@@ -26,6 +26,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'onsails/lspkind.nvim'
 
 " LSP Prettier
 Plug 'jose-elias-alvarez/null-ls.nvim'
