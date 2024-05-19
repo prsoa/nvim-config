@@ -18,6 +18,9 @@ Plug 'kyazdani42/nvim-tree.lua'
 " LSP Config
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'jay-babu/mason-nvim-dap.nvim'
+Plug 'nvimtools/none-ls.nvim'
+Plug 'jay-babu/mason-null-ls.nvim'
 Plug 'neovim/nvim-lspconfig'
 
 " LSP Completion
@@ -61,10 +64,10 @@ Plug 'tpope/vim-surround'
 Plug 'windwp/nvim-autopairs'
 
 " Git 
-Plug 'airblade/vim-gitgutter' 
+Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
-Plug 'NeogitOrg/neogit'
+Plug 'NeogitOrg/neogit', { 'tag': 'v0.0.1'}
 
 " Toggle comments
 Plug 'terrortylor/nvim-comment'
