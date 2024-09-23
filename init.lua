@@ -45,7 +45,7 @@ require("nvim_comment").setup()
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "jdtls", "tsserver" },
+	ensure_installed = { "lua_ls", "jdtls", "ts_ls" },
 })
 require("mason-nvim-dap").setup({
 	ensure_installed = { "node2", "javadbg" },
@@ -124,9 +124,6 @@ require("gitsigns").setup({
 		virt_text_priority = 100,
 	},
 	current_line_blame_formatter = "<author>, <author_time:%Y-%m-%d> - <summary>",
-	current_line_blame_formatter_opts = {
-		relative_time = false,
-	},
 	sign_priority = 6,
 	update_debounce = 100,
 	status_formatter = nil, -- Use default

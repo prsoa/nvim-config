@@ -67,7 +67,7 @@ Plug 'windwp/nvim-autopairs'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
-Plug 'NeogitOrg/neogit', { 'tag': 'v0.0.1'}
+Plug 'NeogitOrg/neogit', { 'tag': 'master' }
 
 " Toggle comments
 Plug 'terrortylor/nvim-comment'
