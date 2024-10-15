@@ -2,7 +2,7 @@ require("user.cmp")
 
 -- LSP Setup
 local lspconfig = require("lspconfig")
-local servers = { "ts_ls" }
+local servers = { "ts_ls", "tailwindcss" }
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 for _, server in ipairs(servers) do
@@ -14,8 +14,8 @@ end
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
+vim.keymap.set("n", "<space>n", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "<space>p", vim.diagnostic.goto_next)
 vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist)
 
 -- Use LspAttach autocommand to only map the following keys

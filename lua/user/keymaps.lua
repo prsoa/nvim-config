@@ -6,7 +6,7 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- Change <leader> key
-vim.g.mapleader = " "
+vim.g.mapleader = "\\"
 
 -- Telescope
 keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)

@@ -45,13 +45,10 @@ require("nvim_comment").setup()
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "jdtls", "ts_ls" },
+	ensure_installed = { "lua_ls", "jdtls", "ts_ls", "tailwindcss" },
 })
 require("mason-nvim-dap").setup({
 	ensure_installed = { "node2", "javadbg" },
-})
-require("mason-null-ls").setup({
-	ensure_installed = { "stylua" },
 })
 
 require("bufferline").setup({
