@@ -1,7 +1,8 @@
-vim.cmd([[source $HOME/.config/nvim/vim-plug/plugins.vim]])
+require("user.keymaps")
+
+require("config.lazy")
 
 require("user.options")
-require("user.keymaps")
 require("user.dap")
 require("user.lspconfig")
 require("user.prettier")
