@@ -43,7 +43,6 @@ return {
 "rafamadriz/friendly-snippets",
 },
 {
-"jose-elias-alvarez/null-ls.nvim",
 "MunifTanjim/prettier.nvim"
 },
 {
